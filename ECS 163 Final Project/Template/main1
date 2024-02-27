@@ -1,7 +1,5 @@
 document.body.style.backgroundColor = "#1e1e21";
 
-
-
 var svg = d3.select("svg");
 var heartsData = d3.range(30);
 var heartSize = 100; 

@@ -301,3 +301,41 @@ body {
 body.child-frame .only-embed {
    display: block
 }
+
+
+/* Generate hearts */ 
+
+.heart {
+   width: 100px; /* Adjust size as needed */
+   height: 100px; /* Adjust size as needed */
+   display: inline-block;
+   position: absolute; 
+   left: 50%; /* Center horizontally */
+   transform: translateX(-50%); /* Adjust horizontally for centering */
+   bottom: 0; /* Start off-screen or at the bottom */
+   -webkit-mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left, radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right, linear-gradient(to bottom left, red 43%, transparent 43%) bottom left, linear-gradient(to bottom right, red 43%, transparent 43%) bottom right;
+   -webkit-mask-size: 50% 50%;
+   -webkit-mask-repeat: no-repeat;
+   mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left, radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right, linear-gradient(to bottom left, red 43%, transparent 43%) bottom left, linear-gradient(to bottom right, red 43%, transparent 43%) bottom right;
+   mask-size: 50% 50%;
+   mask-repeat: no-repeat;
+   background: linear-gradient(#880808, #880808);
+   animation: stayAndFade 10s ease-out forwards; /* Use the new animation */
+}
+
+.heart::before {
+   content: "";
+   display: block;
+   padding-top: 100%;
+}
+
+@keyframes stayAndFade {
+   0%, 50% {
+       bottom: 90%; /* Position hearts at the top */
+       opacity: 1; /* Fully visible */
+   }
+   100% {
+       bottom: 90%; /* Stay at the top */
+       opacity: 0; /* Then fade away */
+   }
+}
