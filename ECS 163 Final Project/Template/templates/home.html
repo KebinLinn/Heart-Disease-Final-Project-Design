@@ -130,10 +130,9 @@
 
         <html>
             <head>
-                <title>Early Stage Diabetes Detection</title>
                 <style>
                     .container {
-                        width: 80%;
+                        width: 50%;
                         margin: auto;
                         overflow: hidden;
                     }
@@ -187,6 +186,7 @@
                         font-weight: bold;
                     }
                 </style>
+
                 <script>
                     function validateHeightInput() {
                         var feet = document.getElementById("height-feet").value;
@@ -212,82 +212,82 @@
             <body>
                 <header>
                     <div class="container">
-                        <h1>Early Stage Diabetes Detection</h1>
+                        <h1>Heart Disease Risk Detector</h1>
                     </div>
                 </header>
                 <div class="container">
+                    
                     <form action="{{ url_for('predict') }}" method="POST">
+                        
                         <div class="form-element">
                             <label for="age">Age:</label>
-                            <input type="text" name="age" value="{{ form_data.get('age', '') }}">
+                            <input type="number" name="age" value="{{ form_data.get('age', '') }}" placeholder="Age">
+                        </div>
+                        <div class="form-element" style="display: flex; align-items: center;">
+                            <label style="margin-up: 10px;">Gender:</label>
+                            <input type="radio" id="male" name="sex" value="1" {% if form_data.get('sex') == '1' %} checked {% endif %}>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="sex" value="0" {% if form_data.get('sex') == '0' %} checked {% endif %}>
+                            <label for="female">Female</label>
                         </div>
                         <div class="form-element">
-                            <label>Gender:</label>
-                            <input type="radio" id="male" name="gender" value="male" {% if form_data.get('gender') == 'male' %} checked {% endif %}>
-            <label for="male">Male</label>
-                            <input type="radio" id="female" name="gender" value="female" {% if form_data.get('gender') == 'female' %} checked {% endif %}>
-            <label for="female">Female</label>
+                            <label for="cp">Chest Pain Type (0-3):</label>
+                            <input type="number" name="cp" value="{{ form_data.get('cp', '') }}" placeholder="Chest Pain Type">
                         </div>
                         <div class="form-element">
-                            <label for="height-feet">Height (Feet):</label>
-                            <input type="number" id="height-feet" name="height-feet" placeholder="Feet" value="{{ form_data.get('height-feet', '') }}"  oninput="validateHeightInput()">
+                            <label for="trestbps">Resting Blood Pressure:</label>
+                            <input type="number" name="trestbps" value="{{ form_data.get('trestbps', '') }}" placeholder="Resting Blood Pressure">
                         </div>
                         <div class="form-element">
-                            <label for="height-inches">Height (Inches):</label>
-                            <input type="number" id="height-inches" name="height-inches" placeholder="Inches" value="{{ form_data.get('height-inches', '') }}" oninput="validateHeightInput()">
+                            <label for="chol">Serum Cholesterol (mg/dl):</label>
+                            <input type="number" name="chol" value="{{ form_data.get('chol', '') }}" placeholder="Serum Cholesterol">
                         </div>
                         <div class="form-element">
-                            <label for="weight">Weight (lbs):</label>
-                            <input type="number" id="weight" name="weight" placeholder="Pounds" value="{{ form_data.get('weight', '') }}" oninput="validateWeightInput()">
+                            <label for="fbs">Fasting Blood Sugar > 120 mg/dl:</label>
+                            <input type="checkbox" name="fbs" value="1" {% if form_data.get('fbs') == '1' %} checked {% endif %}>
                         </div>
-                        <div class="symptoms-box">
-                            <p>Please mark all medical conditions that you have been diagnosed with:</p>
-
-
-
-
-<input type="checkbox" id="HTN" name="HTN" {% if form_data.get('HTN') %} checked {% endif %}>
-<label for="HTN">HTN</label><br>
-
-<input type="checkbox" id="Allergies" name="Allergies" {% if form_data.get('Allergies') %} checked {% endif %}>
-<label for="Allergies">Allergies</label><br>
-
-<input type="checkbox" id="Life.Style" name="Life.Style" {% if form_data.get('Life.Style') %} checked {% endif %}>
-<label for="Life.Style">Life Style</label><br>
-
-<input type="checkbox" id="Depression" name="Depression" {% if form_data.get('Depression') %} checked {% endif %}>
-<label for="Depression">Depression</label><br>
-
-<input type="checkbox" id="Hyperlipi" name="Hyperlipi" {% if form_data.get('Hyperlipi') %} checked {% endif %}>
-<label for="Hyperlipi">Hyperlipi</label><br>
-
-<input type="checkbox" id="Smoking" name="Smoking" {% if form_data.get('Smoking') %} checked {% endif %}>
-<label for="Smoking">Smoking</label><br>
-
-
-
-
-
-
-
-
+                        <div class="form-element">
+                            <label for="restecg">Resting Electrocardiographic Results (0-2):</label>
+                            <input type="number" name="restecg" value="{{ form_data.get('restecg', '') }}" placeholder="Resting ECG Results">
                         </div>
-                <h4>
+                        <div class="form-element">
+                            <label for="thalach">Maximum Heart Rate Achieved:</label>
+                            <input type="number" name="thalach" value="{{ form_data.get('thalach', '') }}" placeholder="Max Heart Rate">
+                        </div>
+                        <div class="form-element">
+                            <label for="exang">Exercise-Induced Angina:</label>
+                            <input type="checkbox" name="exang" value="1" {% if form_data.get('exang') == '1' %} checked {% endif %}>
+                        </div>
+                        <div class="form-element">
+                            <label for="oldpeak">ST Depression Induced by Exercise:</label>
+                            <input type="text" name="oldpeak" value="{{ form_data.get('oldpeak', '') }}" placeholder="ST Depression">
+                        </div>
+                        <div class="form-element">
+                            <label for="slope">Slope of the Peak Exercise ST Segment:</label>
+                            <input type="number" name="slope" value="{{ form_data.get('slope', '') }}" placeholder="Slope">
+                        </div>
+                        <div class="form-element">
+                            <label for="ca">Number of Major Vessels (0-4) Colored by Flourosopy:</label>
+                            <input type="number" name="ca" value="{{ form_data.get('ca', '') }}" placeholder="Major Vessels">
+                        </div>
+                        <div class="form-element">
+                            <label for="thal">Thalassemia (3 = normal; 6 = fixed defect; 7 = reversible defect):</label>
+                            <input type="number" name="thal" value="{{ form_data.get('thal', '') }}" placeholder="Thalassemia">
+                        </div>
                         <div class="form-element">
                             <input type="submit" value="Submit">
                         </div>
                         <div class="center-text">
                             {% if prediction == "Positive" %}
-                                <p>Early Stage Diabetes Detection Result: <span style="color: red;">{{ prediction }}</span></p>
+                                <p>Heart Disease Detection Result: <span style="color: red;">{{ prediction }}</span></p>
                             {% elif prediction == "Negative" %}
-                                <p>Early Stage Diabetes Detection Result: <span style="color: green;">{{ prediction }}</span></p>
+                                <p>Heart Disease Detection Result: <span style="color: green;">{{ prediction }}</span></p>
                             {% endif %}
                             {% if prediction_value %}
                                 <p>Detection Probability: {{ prediction_prob }}</p>
                                 <p>Raw prediction value: {{ prediction_value }}</p>
                             {% endif %}
                         </div>
-                </h4>
                     </form>
                 </div>
             </body>
