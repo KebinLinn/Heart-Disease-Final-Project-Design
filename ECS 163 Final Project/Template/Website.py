@@ -29,4 +29,4 @@ def predict():
     return render_template("home.html", prediction=prediction_text, prediction_prob=predictionProb, prediction_value=prediction_proba[0], form_data=form_data)
 
 if __name__ == "__main__":
-    flask_app.run(debug=True)
+    flask_app.run(host='0.0.0.0', port=5000, debug=True)
