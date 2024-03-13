@@ -76,12 +76,8 @@
                 </div>
             </section>
             <section class="body-text" id>
-                <p>In the early stages of distributing a new vaccine, higher priority may be given to healthcare workers and other people on the front lines, or those considered most vulnerable, a process known as &#x201C;targeted vaccination.&#x201D;Miller said it is crucial that people who might be considered super spreaders, such as public transport workers, also receive the vaccine quickly.</p>
-                <p>&#x201C;An ideal vaccination campaign will ensure that the vaccine goes to groups that are at highest risk but also those that are most responsible for spreading infection,&#x201D;said Miller.</p>
-                <h3>Movement restrictions</h3>
-                <p>The movement of people also has implications for the spread of a virus. The base Reuters model works on the assumption that a small percentage of people travel to communities outside their immediate surroundings.</p>
-                <p>In the chart below, we compare two populations: the first group has people who mix and travel widely and the second group has relatively static citizens. The difference in the speed of the spread of a virus is clear.</p>
-                <p>At lower vaccination levels, the number of people who end up infected is similar in both groups, but the spread is much slower in the static population, which keeps the number of cases at a manageable level for hospitals and healthcare providers. That scenario is reflected in the lockdown measures and travel restrictions imposed by many countries during the coronavirus pandemic to try to &#x201C;flatten the curve.&#x201D;</p>
+                <p>Other methods for prevention would also be chest x-rays. This allows doctors to see if the heart is enlarged or if there is another source of issues.</p>
+                <p>A simple blood test provides health care professionals with plenty of evidence to screen for during a heart failure diagnosis. Below we share a sample of individuals that have heart failure with their ailments and bodily statistics.</p>
             </section>
 
             <section class="body-text" id>
@@ -108,24 +104,76 @@
 
             <section class="end-notes mt-5">
                 <section class="end-notes">
-                    <h4>Methodology</h4>
-                    <p>The simulations start by creating a predefined number of squares. Each square represents a person. It initializes the population with 5 infected individuals and a percentage of vaccinated individuals. Both the infected and vaccinated were chosen randomly. A percentage of the vaccinated individuals (100% - vaccine effectiveness) are randomly selected and marked susceptible. To explain: If the vaccine effectiveness is 70%, 30% of the vaccinated squares will be marked susceptible.</p>
-                    <p>For the purpose of this illustrative simulation, every infected cell has &#x201C;contact &#x201D;with 8 immediate neighbours. A fraction of randomly selected cells also have an extra &#x201C;long distance neighbour &#x201D;. Such a consistent number of contacts may be unrealistic, but this ensures a fair comparison across various vaccination scenarios.</p>
-                    <p>These neighbours can be infected, vaccinated, or susceptible.</p>
-                    <p>The simulation runs for many &#x201C;frames &#x201D;. Each frame represents one day.</p>
-                    <p>Initial parameters used are: R0 = 2.5, days of infectiousness = 7, transmissibility calculated using SIR formula.</p>
-                    <p>The average rate of contact used in the formula is 8 because each infected cell has 8 neighbours.</p>
-                    <p>Each day, the simulation runs for every infected cell. The infected cell is made to contact each of its 8 neighbours with the following conditions:</p>
-                    <ul>
-                        <li>if the neighbour is vaccinated or already infected, move on</li>
-                        <li>if the neighbour is infected, move on</li>
-                        <li>if the neighbour is susceptible, generate a random probability and check if it falls within transmissibility. If it does, then infect the neighbour. The &#x201C;generation &#x201D;of this neighbour is = generation of source + 1</li>
-                    </ul>
-                    <p>A cell remains infected for the &#x201C;Days of infectiousness &#x201D;parameter above = 7 days, or 7 &#x201C;frames &#x201D;of the simulation. After 7 days, the cell is moved to the &#x201C;removed &#x201D;category.</p>
-                    <h4>Notes</h4>
-                    <p>The graphic which simulates the impact of wearing masks uses a risk reduction figure of 44% as stated in a study commissioned by the WHO and published in the Lancet in June.</p>
-                    <h3>Sources</h3>
-                    <p>Reuters calculations; Dr Joel Miller, La Trobe University, Melbourne</p>
+                    <h4>Resources</h4>
+                    <p><a href="http://Heart.org">Heart.ORG</a> 
+                        <style>
+                            a:link {
+                              color: rgb(128, 0, 38);
+                              background-color: transparent;
+                              text-decoration: none;
+                            }
+                            
+                            a:visited {
+                              color: pink;
+                              background-color: transparent;
+                              text-decoration: none;
+                            }
+                            
+                            a:hover {
+                              color: rgb(211, 0, 0);
+                              background-color: transparent;
+                              text-decoration: underline;
+                            }
+                            
+                            </style>
+                        <ul><li>Easy resources to aid, prevent, and spread awareness for heart failure.</li></ul> 
+                        </p>
+                    <p><a href="https://www.nhlbi.nih.gov/research/heart-failure">NIH GOV Heart Failure</a>
+                        <style>
+                            a:link {
+                              color: rgb(128, 0, 38);
+                              background-color: transparent;
+                              text-decoration: none;
+                            }
+                            
+                            a:visited {
+                              color: pink;
+                              background-color: transparent;
+                              text-decoration: none;
+                            }
+                            
+                            a:hover {
+                              color: rgb(211, 0, 0);
+                              background-color: transparent;
+                              text-decoration: underline;
+                            }
+                            
+                            </style>   
+                    <ul><li>Current research in heart failure, prevention, and medication. </li></ul>
+                    </p>
+                <p><a href="https://www.cdc.gov/heartdisease/heart_failure.htm">CDC Heart Failure</a>
+                    <style>
+                        a:link {
+                        color: rgb(128, 0, 38);
+                        background-color: transparent;
+                        text-decoration: none;
+                        }
+                        
+                        a:visited {
+                        color: pink;
+                        background-color: transparent;
+                        text-decoration: none;
+                        }
+                        
+                        a:hover {
+                        color: rgb(211, 0, 0);
+                        background-color: transparent;
+                        text-decoration: underline;
+                        }
+                        
+                        </style>   
+                        <ul><li>Current statistics and other external links for heart failure care.</li></ul>
+                    </p>
                 </section>
             </section>
         </article>
@@ -219,9 +267,11 @@
                 <header>
                     <div class="container">
                         <h1>Heart Disease Risk Detector</h1>
+                        
                     </div>
                 </header>
                 <div class="container">
+                    <h5>Not to be used in replacement for professional medical help.</h5>
                     
                     <form action="{{ url_for('predict') }}" method="POST">
                         
