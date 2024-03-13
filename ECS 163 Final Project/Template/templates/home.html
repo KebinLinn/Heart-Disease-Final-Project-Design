@@ -1,406 +1,305 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='app.662fec98eb52e40cc55a.css') }}">
-</head>
-
-<body class="child-frame">
-    <article class="container-fluid">
-        <section class="fluid text-center mb-3 sim-container" id="topper-container">
-            <div id="topper">
-                <div class="herd-sim-container" data-special="1/4">
-                    <div class="herd-sim" data-vac="0" data-initial="5" data-special="1/4"></div>
-                </div>
-            </div>
-            <div class="topper-text header">
-                <h1 class="mt-0">Heart Disease</h1>
-                <p>Heart Disease TEMP</p>
-            </div>
-        </section>
-        <section class="fluid text-center header mb-3">
-            <div class="article-metadata p-0">
-                <div class="byline-container">
-                    <div class="byline">
-                        <span>By </span>
-                        <strong>
-                            <a href=".">Kevin Lin</a>
-                        </strong>
-                        <span>and</span>
-                        <strong>
-                            <a href=".">Terrence Nguyen</a>
-                        </strong>
-                        <span>and</span>
-                        <strong>
-                            <a href=".">Isabelle Woodruff-Madeira</a>
-                        </strong>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
-            </aside>
-        </section>
-        <section class="body-text" id>
-            <p>In the US alone, it is estimated that half of adults currently live with hypertension, or better known as
-                high blood pressure. Untreated hypertension can eventually lead to heart failure, which is responsible
-                for about 379,800 deaths in 2018.</p>
-            <p>Along with hypervention, those with diabetes, hyperlipidaemia, and other cardiovascular diseases also
-                have a high risk of heart failure. Preventive screenings and early detection are one major way to reduce
-                the chances of heart failure, especially to those already at risk. </p>
-        </section>
-
-        <!--ADD GRAPH HERE-->
-
-        </section>
-        <section class="body-text" id>
-            <h3>What is Heart Failure?</h3>
-            <p>Heart Failure is a lifelong condition where the heart cannot pump enough blood for the minimum need of
-                the body. Our bodies have different methods of handling this issue, from the heart enlarging or pumping
-                faster to meet demand. These are all temporary solutions, and if left untreated will lead to death.</p>
-            <p>Currently, there are about 6.7 million Americans over the age of 20 that have heart failure.</p>
-        </section>
-        <script src="https://d3js.org/d3.v5.min.js"></script>
-        <script src="bargraph.js"></script>
-        <section class="body-text" id>
-            <h3>Balancing vaccine distribution</h3>
-            <p>The way a vaccine is distributed has implications for its effectiveness. If it is shared unevenly within
-                a community, for example if people in wealthy areas have greater access than those in poorer locations,
-                that creates safe clusters but leaves large areas of susceptible people.</p>
-            <p>&#x201C;We need to be sure that we spread the vaccine equitably through the population,&#x201D;said Joel
-                Miller, a senior lecturer in applied mathematics at La Trobe University in Melbourne, who uses
-                mathematical models to help create government and non-profit organization policies for the control of
-                infectious disease.</p>
-        </section>
-        <section class="fluid">
-            <div class="distribution-sim-block sim-container" id="distribution-grid">
-                <div class="restart">
-                    <p>Restart</p>
-                </div>
-                <div id="grouped">
-                    <div class="herd-sim-container" data-special="grouped">
-                        <div class="herd-sim" data-vac="NA" data-initial="5" data-special="grouped"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="body-text" id>
-            <p>In the early stages of distributing a new vaccine, higher priority may be given to healthcare workers and
-                other people on the front lines, or those considered most vulnerable, a process known as
-                &#x201C;targeted vaccination.&#x201D;Miller said it is crucial that people who might be considered super
-                spreaders, such as public transport workers, also receive the vaccine quickly.</p>
-            <p>&#x201C;An ideal vaccination campaign will ensure that the vaccine goes to groups that are at highest
-                risk but also those that are most responsible for spreading infection,&#x201D;said Miller.</p>
-            <h3>Movement restrictions</h3>
-            <p>The movement of people also has implications for the spread of a virus. The base Reuters model works on
-                the assumption that a small percentage of people travel to communities outside their immediate
-                surroundings.</p>
-            <p>In the chart below, we compare two populations: the first group has people who mix and travel widely and
-                the second group has relatively static citizens. The difference in the speed of the spread of a virus is
-                clear.</p>
-            <p>At lower vaccination levels, the number of people who end up infected is similar in both groups, but the
-                spread is much slower in the static population, which keeps the number of cases at a manageable level
-                for hospitals and healthcare providers. That scenario is reflected in the lockdown measures and travel
-                restrictions imposed by many countries during the coronavirus pandemic to try to &#x201C;flatten the
-                curve.&#x201D;</p>
-        </section>
-
-
-
-
-        <!--ADD PARALELL COORDINATE GRAPH HERE-->
-        <div id="parallel-coordinates-plot">
-            <svg></svg>
-        </div>
-
-
-
-
-
-
-
-
-        <section class="body-text" id>
-            <img src="https://cdn.discordapp.com/attachments/1198874338556919949/1217262532994273390/image.png?ex=66036313&is=65f0ee13&hm=76a1a72a020de5bd7ca93705bcd5e732be01c601da6ffe3fbe9ef652b675bf5f&"
-                width="650" height="500" />
-            <p>Even when a high percentage of the population is vaccinated, the number of infected people can be reduced
-                further when people don &#x2019;t travel around.</p>
-        </section>
-
-        <section class="body-text" id>
-            <h3>Vaccination vs natural infection</h3>
-            <p>Herd immunity can also be attained when a large number of people have had a disease and recover. However,
-                the jury is still out on what kind of protection a natural infection with this new coronavirus provides,
-                and certainly more people would die while waiting for the herd effect than if a vaccine was produced.
-            </p>
-            <p>&#x201C;The risk is not acceptable,&#x201D;said Bennett. &#x201C;We can &#x2019;t afford to have people
-                infected to reach herd immunity when we know so little about the longer term effects.&#x201D;</p>
-            <h3>While we wait</h3>
-            <p>There is currently no vaccine for COVID-19, although there are trials underway at different stages around
-                the world. It usually takes several years for a vaccine to be identified, tested, produced, and finally
-                reach the consumer market. Vaccine makers hope to dramatically compress that timeline for COVID-19
-                through faster trials and by manufacturing at scale even before the products have proved successful.</p>
-            <p>In the meantime, social distancing, wearing masks, hand hygiene and other interventions can reduce
-                transmissions and contribute to creating the herd effect. The new coronavirus is spread primarily via
-                droplets expelled when a person coughs or sneezes, and aerosol particles expelled when we talk.</p>
-            <p>The World Health Organization (WHO) says masks can be used as part of a comprehensive package of
-                prevention and control measures that limit the spread of respiratory viral diseases. A study
-                commissioned by the WHO and published in the Lancet in June said that wearing a mask can &#x201C;result
-                in a large reduction in risk of infection &#x201D;from COVID-19.</p>
-            <p>If we apply the use of masks and/or social distancing to our earlier model, with no immunity, a slower
-                spread can be seen. The point at which herd immunity kicks in can also be lowered.</p>
-        </section>
-
-        <section class="body-text" id="before-model">
-            <p>The overall goal is to reduce the effective reproduction rate of the virus to less than 1, at which point
-                an outbreak would be subsiding as infected people transmit the virus to fewer than one other person on
-                average.</p>
-            <p>Epidemiologists largely agree that a combination of vaccination and continued social responsibility
-                measures like physical distancing will provide the strongest chance of achieving that goal. The combined
-                approach is critical given early vaccines brought to the market will likely not have 100% efficacy.</p>
-            <p>&#x201C;It &#x2019;s about adding layers,&#x201D;Bennett said. &#x201C;It gives us extra protection from
-                community spread. The situation is very much better in places where a combination of measures is being
-                used.&#x201D;</p>
-        </section>
-
-        <!--ADD bargraph HERE-->
-        <div id="bargraph">
-            <svg></svg>
-        </div>
-
-
-
-        <section class="end-notes mt-5">
-            <section class="end-notes">
-                <h4>Methodology</h4>
-                <p>The simulations start by creating a predefined number of squares. Each square represents a person. It
-                    initializes the population with 5 infected individuals and a percentage of vaccinated individuals.
-                    Both the infected and vaccinated were chosen randomly. A percentage of the vaccinated individuals
-                    (100% - vaccine effectiveness) are randomly selected and marked susceptible. To explain: If the
-                    vaccine effectiveness is 70%, 30% of the vaccinated squares will be marked susceptible.</p>
-                <p>For the purpose of this illustrative simulation, every infected cell has &#x201C;contact &#x201D;with
-                    8 immediate neighbours. A fraction of randomly selected cells also have an extra &#x201C;long
-                    distance neighbour &#x201D;. Such a consistent number of contacts may be unrealistic, but this
-                    ensures a fair comparison across various vaccination scenarios.</p>
-                <p>These neighbours can be infected, vaccinated, or susceptible.</p>
-                <p>The simulation runs for many &#x201C;frames &#x201D;. Each frame represents one day.</p>
-                <p>Initial parameters used are: R0 = 2.5, days of infectiousness = 7, transmissibility calculated using
-                    SIR formula.</p>
-                <p>The average rate of contact used in the formula is 8 because each infected cell has 8 neighbours.</p>
-                <p>Each day, the simulation runs for every infected cell. The infected cell is made to contact each of
-                    its 8 neighbours with the following conditions:</p>
-                <ul>
-                    <li>if the neighbour is vaccinated or already infected, move on</li>
-                    <li>if the neighbour is infected, move on</li>
-                    <li>if the neighbour is susceptible, generate a random probability and check if it falls within
-                        transmissibility. If it does, then infect the neighbour. The &#x201C;generation &#x201D;of this
-                        neighbour is = generation of source + 1</li>
-                </ul>
-                <p>A cell remains infected for the &#x201C;Days of infectiousness &#x201D;parameter above = 7 days, or 7
-                    &#x201C;frames &#x201D;of the simulation. After 7 days, the cell is moved to the &#x201C;removed
-                    &#x201D;category.</p>
-                <h4>Notes</h4>
-                <p>The graphic which simulates the impact of wearing masks uses a risk reduction figure of 44% as stated
-                    in a study commissioned by the WHO and published in the Lancet in June.</p>
-                <h3>Sources</h3>
-                <p>Reuters calculations; Dr Joel Miller, La Trobe University, Melbourne</p>
-            </section>
-        </section>
-    </article>
-    </script>
-
-
-
-
-    <html>
-
     <head>
-        <style>
-            .container {
-                width: 50%;
-                margin: auto;
-                overflow: hidden;
-            }
-
-            header {
-                background: #35424a;
-                color: #212121;
-                padding-top: 30px;
-                min-height: 70px;
-                border-bottom: #212121 3px solid;
-            }
-
-            header h1 {
-                text-align: center;
-                font-size: 26px;
-                margin: 0;
-            }
-
-            form {
-                margin: 20px;
-                padding: 20px;
-                background: #212121;
-            }
-
-            .form-element {
-                margin-bottom: 15px;
-            }
-
-            .form-element label {
-                display: inline-block;
-                margin-right: 10px;
-                padding-bottom: 5px;
-            }
-
-            .form-element input[type="text"],
-            .form-element input[type="number"],
-            .form-element input[type="submit"] {
-                width: 100%;
-                padding: 10px;
-            }
-
-            .form-element input[type="submit"] {
-                background: #35424a;
-                color: #fff;
-                margin-top: 20px;
-            }
-
-            .form-element input[type="submit"]:hover {
-                background: #e8491d;
-                cursor: pointer;
-            }
-
-            .symptoms-box {
-                border: 2px solid #35424a;
-                padding: 20px;
-                margin: 20px 0;
-            }
-
-            .center-text {
-                text-align: center;
-                font-weight: bold;
-            }
-        </style>
-
-        <script>
-            function validateHeightInput() {
-                var feet = document.getElementById("height-feet").value;
-                var inches = document.getElementById("height-inches").value;
-
-                if (feet <= "0" && inches <= "0") {
-                    alert("Please enter a valid height greater than 0.");
-                    document.getElementById("height-feet").value = "";
-                    document.getElementById("height-inches").value = "";
-                }
-            }
-
-            function validateWeightInput() {
-                var weight = document.getElementById("weight").value;
-
-                if (isNaN(weight) || weight <= 0) {
-                    alert("Please enter a valid positive number for weight.");
-                    document.getElementById("weight").value = "";
-                }
-            }
-        </script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='app.662fec98eb52e40cc55a.css') }}">
     </head>
-
-    <body>
-        <header>
-            <div class="container">
-                <h1>Heart Disease Risk Detector</h1>
+    <body class="child-frame">
+        <article class="container-fluid">
+            <section class="fluid text-center mb-3 sim-container" id="topper-container">
+                <div id="topper">
+                    <div class="herd-sim-container" data-special="1/4">
+                        <div class="herd-sim" data-vac="0" data-initial="5" data-special="1/4"></div>
+                    </div>
+                </div>
+                <div class="topper-text header">
+                    <h1 class="mt-0">Heart Disease</h1>
+                    <p>A Preventable Illness</p>
+                </div>
+            </section>
+            <section class="fluid text-center header mb-3">
+                <div class="article-metadata p-0">
+                    <div class="byline-container">
+                        <div class="byline">
+                            <span>By </span>
+                            <strong>
+                                <a href=".">Kevin Lin</a>
+                            </strong>
+                            <span>and</span>
+                            <strong>
+                                <a href=".">Terrence Nguyen</a>
+                            </strong>
+                            <span>and</span>
+                            <strong>
+                                <a href=".">Isabelle Woodruff-Madeira</a>
+                            </strong>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </aside>
+            </section>
+            <section class="body-text" id>
+                <p>In the US alone, it is estimated that half of adults currently live with hypertension, or better known as high blood pressure. Untreated hypertension can eventually lead to heart failure, which is responsible for about 379,800 deaths in 2018.</p>
+                <p>Along with hypervention, those with diabetes, hyperlipidaemia, and other cardiovascular diseases also have a high risk of heart failure. Preventive screenings and early detection are one major way to reduce the chances of heart failure, especially to those already at risk. </p>
+            </section>
+            </section>
+            <section class="body-text" id>
+                <h3>What is Heart Failure?</h3>
+                <p>Heart Failure is a lifelong condition where the heart cannot pump enough blood for the minimum need of the body. Our bodies have different methods of handling this issue, from the heart enlarging or pumping faster to meet demand. These are all temporary solutions, and if left untreated will lead to death.</p>
+                <p>Currently, there are about 6.7 million Americans over the age of 20 that have heart failure.</p>
+            </section>
+            <!--ADD BAR GRAPH HERE-->
+            <div id="bargraph.js">
+                <svg></svg>
             </div>
-        </header>
-        <div class="container">
+            <section class="body-text" id>
+                <h3>Prediction Methods</h3>
+                <p>The most straight forward way to screen for heart failure is with a physical examination. But if we were to prevent heart failure instead, it would be more complicated. The best method for screening the risks would be assessing the ejection fraction (EF) of one's heart. Ejection fraction is a measurement of how much blood the heart pumps within its left vesticle with each contraction. For scale, a normal ejection fraction would be between 50-70 percent of the total blood contained in the left vesticle is pumped out with each contraction. </p>
+                <p>An unhealthy EF would be less than 49 percent.</p>
+                <p>Below is an infographic made by the American Heart Association to inform about EF.</p>
+                <img src="https://cdn.discordapp.com/attachments/1198874338556919949/1217262532994273390/image.png?ex=66036313&is=65f0ee13&hm=76a1a72a020de5bd7ca93705bcd5e732be01c601da6ffe3fbe9ef652b675bf5f&"
+                width="650" 
+                height="500"
+                />
+            </section>
+            <section class="fluid">
+                <div class="distribution-sim-block sim-container" id="distribution-grid">
+                    <div class="restart">
+                        <p>Restart</p>
+                    </div>
+                    <div id="grouped">
+                        <div class="herd-sim-container" data-special="grouped">
+                            <div class="herd-sim" data-vac="NA" data-initial="5" data-special="grouped"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="body-text" id>
+                <p>In the early stages of distributing a new vaccine, higher priority may be given to healthcare workers and other people on the front lines, or those considered most vulnerable, a process known as &#x201C;targeted vaccination.&#x201D;Miller said it is crucial that people who might be considered super spreaders, such as public transport workers, also receive the vaccine quickly.</p>
+                <p>&#x201C;An ideal vaccination campaign will ensure that the vaccine goes to groups that are at highest risk but also those that are most responsible for spreading infection,&#x201D;said Miller.</p>
+                <h3>Movement restrictions</h3>
+                <p>The movement of people also has implications for the spread of a virus. The base Reuters model works on the assumption that a small percentage of people travel to communities outside their immediate surroundings.</p>
+                <p>In the chart below, we compare two populations: the first group has people who mix and travel widely and the second group has relatively static citizens. The difference in the speed of the spread of a virus is clear.</p>
+                <p>At lower vaccination levels, the number of people who end up infected is similar in both groups, but the spread is much slower in the static population, which keeps the number of cases at a manageable level for hospitals and healthcare providers. That scenario is reflected in the lockdown measures and travel restrictions imposed by many countries during the coronavirus pandemic to try to &#x201C;flatten the curve.&#x201D;</p>
+            </section>
 
-            <form action="{{ url_for('predict') }}" method="POST">
+            <section class="body-text" id>
+                <p>Even when a high percentage of the population is vaccinated, the number of infected people can be reduced further when people don &#x2019;t travel around.</p>
+            </section>
 
-                <div class="form-element">
-                    <label for="age">Age:</label>
-                    <input type="number" name="age" value="{{ form_data.get('age', '') }}" placeholder="Age">
+            <section class="body-text" id>
+                <h3>Vaccination vs natural infection</h3>
+                <p>Herd immunity can also be attained when a large number of people have had a disease and recover. However, the jury is still out on what kind of protection a natural infection with this new coronavirus provides, and certainly more people would die while waiting for the herd effect than if a vaccine was produced.</p>
+                <p>&#x201C;The risk is not acceptable,&#x201D;said Bennett. &#x201C;We can &#x2019;t afford to have people infected to reach herd immunity when we know so little about the longer term effects.&#x201D;</p>
+                <h3>While we wait</h3>
+                <p>There is currently no vaccine for COVID-19, although there are trials underway at different stages around the world. It usually takes several years for a vaccine to be identified, tested, produced, and finally reach the consumer market. Vaccine makers hope to dramatically compress that timeline for COVID-19 through faster trials and by manufacturing at scale even before the products have proved successful.</p>
+                <p>In the meantime, social distancing, wearing masks, hand hygiene and other interventions can reduce transmissions and contribute to creating the herd effect. The new coronavirus is spread primarily via droplets expelled when a person coughs or sneezes, and aerosol particles expelled when we talk.</p>
+                <p>The World Health Organization (WHO) says masks can be used as part of a comprehensive package of prevention and control measures that limit the spread of respiratory viral diseases. A study commissioned by the WHO and published in the Lancet in June said that wearing a mask can &#x201C;result in a large reduction in risk of infection &#x201D;from COVID-19.</p>
+                <p>If we apply the use of masks and/or social distancing to our earlier model, with no immunity, a slower spread can be seen. The point at which herd immunity kicks in can also be lowered.</p>
+            </section>
+
+            <section class="body-text" id="before-model">
+                <p>The overall goal is to reduce the effective reproduction rate of the virus to less than 1, at which point an outbreak would be subsiding as infected people transmit the virus to fewer than one other person on average.</p>
+                <p>Epidemiologists largely agree that a combination of vaccination and continued social responsibility measures like physical distancing will provide the strongest chance of achieving that goal. The combined approach is critical given early vaccines brought to the market will likely not have 100% efficacy.</p>
+                <p>&#x201C;It &#x2019;s about adding layers,&#x201D;Bennett said. &#x201C;It gives us extra protection from community spread. The situation is very much better in places where a combination of measures is being used.&#x201D;</p>
+            </section>
+
+
+            <section class="end-notes mt-5">
+                <section class="end-notes">
+                    <h4>Methodology</h4>
+                    <p>The simulations start by creating a predefined number of squares. Each square represents a person. It initializes the population with 5 infected individuals and a percentage of vaccinated individuals. Both the infected and vaccinated were chosen randomly. A percentage of the vaccinated individuals (100% - vaccine effectiveness) are randomly selected and marked susceptible. To explain: If the vaccine effectiveness is 70%, 30% of the vaccinated squares will be marked susceptible.</p>
+                    <p>For the purpose of this illustrative simulation, every infected cell has &#x201C;contact &#x201D;with 8 immediate neighbours. A fraction of randomly selected cells also have an extra &#x201C;long distance neighbour &#x201D;. Such a consistent number of contacts may be unrealistic, but this ensures a fair comparison across various vaccination scenarios.</p>
+                    <p>These neighbours can be infected, vaccinated, or susceptible.</p>
+                    <p>The simulation runs for many &#x201C;frames &#x201D;. Each frame represents one day.</p>
+                    <p>Initial parameters used are: R0 = 2.5, days of infectiousness = 7, transmissibility calculated using SIR formula.</p>
+                    <p>The average rate of contact used in the formula is 8 because each infected cell has 8 neighbours.</p>
+                    <p>Each day, the simulation runs for every infected cell. The infected cell is made to contact each of its 8 neighbours with the following conditions:</p>
+                    <ul>
+                        <li>if the neighbour is vaccinated or already infected, move on</li>
+                        <li>if the neighbour is infected, move on</li>
+                        <li>if the neighbour is susceptible, generate a random probability and check if it falls within transmissibility. If it does, then infect the neighbour. The &#x201C;generation &#x201D;of this neighbour is = generation of source + 1</li>
+                    </ul>
+                    <p>A cell remains infected for the &#x201C;Days of infectiousness &#x201D;parameter above = 7 days, or 7 &#x201C;frames &#x201D;of the simulation. After 7 days, the cell is moved to the &#x201C;removed &#x201D;category.</p>
+                    <h4>Notes</h4>
+                    <p>The graphic which simulates the impact of wearing masks uses a risk reduction figure of 44% as stated in a study commissioned by the WHO and published in the Lancet in June.</p>
+                    <h3>Sources</h3>
+                    <p>Reuters calculations; Dr Joel Miller, La Trobe University, Melbourne</p>
+                </section>
+            </section>
+        </article>
+        </script>
+
+
+
+
+        <html>
+            <head>
+                <style>
+                    .container {
+                        width: 50%;
+                        margin: auto;
+                        overflow: hidden;
+                    }
+                    header {
+                        background: #35424a;
+                        color: #212121;
+                        padding-top: 30px;
+                        min-height: 70px;
+                        border-bottom: #212121 3px solid;
+                    }
+                    header h1 {
+                        text-align: center;
+                        font-size: 26px;
+                        margin: 0;
+                    }
+                    form {
+                        margin: 20px;
+                        padding: 20px;
+                        background: #212121;
+                    }
+                    .form-element {
+                        margin-bottom: 15px;
+                    }
+                    .form-element label {
+                        display: inline-block;
+                        margin-right: 10px;
+                        padding-bottom: 5px;
+                    }
+                    .form-element input[type="text"],
+                    .form-element input[type="number"],
+                    .form-element input[type="submit"] {
+                        width: 100%;
+                        padding: 10px;
+                    }
+                    .form-element input[type="submit"] {
+                        background: #35424a;
+                        color: #fff;
+                        margin-top: 20px;
+                    }
+                    .form-element input[type="submit"]:hover {
+                        background: #e8491d;
+                        cursor: pointer;
+                    }
+                    .symptoms-box {
+                        border: 2px solid #35424a;
+                        padding: 20px;
+                        margin: 20px 0;
+                    }
+                    .center-text {
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                </style>
+
+                <script>
+                    function validateHeightInput() {
+                        var feet = document.getElementById("height-feet").value;
+                        var inches = document.getElementById("height-inches").value;
+
+                        if (feet <= "0" && inches <= "0") {
+                            alert("Please enter a valid height greater than 0.");
+                            document.getElementById("height-feet").value = "";
+                            document.getElementById("height-inches").value = "";
+                        }
+                    }
+
+                    function validateWeightInput() {
+                        var weight = document.getElementById("weight").value;
+
+                        if (isNaN(weight) || weight <= 0) {
+                            alert("Please enter a valid positive number for weight.");
+                            document.getElementById("weight").value = "";
+                        }
+                    }
+                </script>
+            </head>
+            <body>
+                <header>
+                    <div class="container">
+                        <h1>Heart Disease Risk Detector</h1>
+                    </div>
+                </header>
+                <div class="container">
+                    
+                    <form action="{{ url_for('predict') }}" method="POST">
+                        
+                        <div class="form-element">
+                            <label for="age">Age:</label>
+                            <input type="number" name="age" value="{{ form_data.get('age', '') }}" placeholder="Age">
+                        </div>
+                        <div class="form-element" style="display: flex; align-items: center;">
+                            <label style="margin-up: 10px;">Gender:</label>
+                            <input type="radio" id="male" name="sex" value="1" {% if form_data.get('sex') == '1' %} checked {% endif %}>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="sex" value="0" {% if form_data.get('sex') == '0' %} checked {% endif %}>
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="form-element">
+                            <label for="cp">Chest Pain Type (0-3):</label>
+                            <input type="number" name="cp" value="{{ form_data.get('cp', '') }}" placeholder="Chest Pain Type">
+                        </div>
+                        <div class="form-element">
+                            <label for="trestbps">Resting Blood Pressure:</label>
+                            <input type="number" name="trestbps" value="{{ form_data.get('trestbps', '') }}" placeholder="Resting Blood Pressure">
+                        </div>
+                        <div class="form-element">
+                            <label for="chol">Serum Cholesterol (mg/dl):</label>
+                            <input type="number" name="chol" value="{{ form_data.get('chol', '') }}" placeholder="Serum Cholesterol">
+                        </div>
+                        <div class="form-element">
+                            <label for="fbs">Fasting Blood Sugar > 120 mg/dl:</label>
+                            <input type="checkbox" name="fbs" value="1" {% if form_data.get('fbs') == '1' %} checked {% endif %}>
+                        </div>
+                        <div class="form-element">
+                            <label for="restecg">Resting Electrocardiographic Results (0-2):</label>
+                            <input type="number" name="restecg" value="{{ form_data.get('restecg', '') }}" placeholder="Resting ECG Results">
+                        </div>
+                        <div class="form-element">
+                            <label for="thalach">Maximum Heart Rate Achieved:</label>
+                            <input type="number" name="thalach" value="{{ form_data.get('thalach', '') }}" placeholder="Max Heart Rate">
+                        </div>
+                        <div class="form-element">
+                            <label for="exang">Exercise-Induced Angina:</label>
+                            <input type="checkbox" name="exang" value="1" {% if form_data.get('exang') == '1' %} checked {% endif %}>
+                        </div>
+                        <div class="form-element">
+                            <label for="oldpeak">ST Depression Induced by Exercise:</label>
+                            <input type="text" name="oldpeak" value="{{ form_data.get('oldpeak', '') }}" placeholder="ST Depression">
+                        </div>
+                        <div class="form-element">
+                            <label for="slope">Slope of the Peak Exercise ST Segment:</label>
+                            <input type="number" name="slope" value="{{ form_data.get('slope', '') }}" placeholder="Slope">
+                        </div>
+                        <div class="form-element">
+                            <label for="ca">Number of Major Vessels (0-4) Colored by Flourosopy:</label>
+                            <input type="number" name="ca" value="{{ form_data.get('ca', '') }}" placeholder="Major Vessels">
+                        </div>
+                        <div class="form-element">
+                            <label for="thal">Thalassemia (3 = normal; 6 = fixed defect; 7 = reversible defect):</label>
+                            <input type="number" name="thal" value="{{ form_data.get('thal', '') }}" placeholder="Thalassemia">
+                        </div>
+                        <div class="form-element">
+                            <input type="submit" value="Submit">
+                        </div>
+                        <div class="center-text">
+                            {% if prediction == "Positive" %}
+                                <p>Heart Disease Detection Result: <span style="color: red;">{{ prediction }}</span></p>
+                            {% elif prediction == "Negative" %}
+                                <p>Heart Disease Detection Result: <span style="color: green;">{{ prediction }}</span></p>
+                            {% endif %}
+                            {% if prediction_value %}
+                                <p>Detection Probability: {{ prediction_prob }}</p>
+                                <p>Raw prediction value: {{ prediction_value }}</p>
+                            {% endif %}
+                        </div>
+                    </form>
                 </div>
-                <div class="form-element" style="display: flex; align-items: center;">
-                    <label style="margin-up: 10px;">Gender:</label>
-                    <input type="radio" id="male" name="sex" value="1" {% if form_data.get('sex')=='1' %} checked {%
-                        endif %}>
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="sex" value="0" {% if form_data.get('sex')=='0' %} checked {%
-                        endif %}>
-                    <label for="female">Female</label>
-                </div>
-                <div class="form-element">
-                    <label for="cp">Chest Pain Type (0-3):</label>
-                    <input type="number" name="cp" value="{{ form_data.get('cp', '') }}" placeholder="Chest Pain Type">
-                </div>
-                <div class="form-element">
-                    <label for="trestbps">Resting Blood Pressure:</label>
-                    <input type="number" name="trestbps" value="{{ form_data.get('trestbps', '') }}"
-                        placeholder="Resting Blood Pressure">
-                </div>
-                <div class="form-element">
-                    <label for="chol">Serum Cholesterol (mg/dl):</label>
-                    <input type="number" name="chol" value="{{ form_data.get('chol', '') }}"
-                        placeholder="Serum Cholesterol">
-                </div>
-                <div class="form-element">
-                    <label for="fbs">Fasting Blood Sugar > 120 mg/dl:</label>
-                    <input type="checkbox" name="fbs" value="1" {% if form_data.get('fbs')=='1' %} checked {% endif %}>
-                </div>
-                <div class="form-element">
-                    <label for="restecg">Resting Electrocardiographic Results (0-2):</label>
-                    <input type="number" name="restecg" value="{{ form_data.get('restecg', '') }}"
-                        placeholder="Resting ECG Results">
-                </div>
-                <div class="form-element">
-                    <label for="thalach">Maximum Heart Rate Achieved:</label>
-                    <input type="number" name="thalach" value="{{ form_data.get('thalach', '') }}"
-                        placeholder="Max Heart Rate">
-                </div>
-                <div class="form-element">
-                    <label for="exang">Exercise-Induced Angina:</label>
-                    <input type="checkbox" name="exang" value="1" {% if form_data.get('exang')=='1' %} checked {% endif
-                        %}>
-                </div>
-                <div class="form-element">
-                    <label for="oldpeak">ST Depression Induced by Exercise:</label>
-                    <input type="text" name="oldpeak" value="{{ form_data.get('oldpeak', '') }}"
-                        placeholder="ST Depression">
-                </div>
-                <div class="form-element">
-                    <label for="slope">Slope of the Peak Exercise ST Segment:</label>
-                    <input type="number" name="slope" value="{{ form_data.get('slope', '') }}" placeholder="Slope">
-                </div>
-                <div class="form-element">
-                    <label for="ca">Number of Major Vessels (0-4) Colored by Flourosopy:</label>
-                    <input type="number" name="ca" value="{{ form_data.get('ca', '') }}" placeholder="Major Vessels">
-                </div>
-                <div class="form-element">
-                    <label for="thal">Thalassemia (3 = normal; 6 = fixed defect; 7 = reversible defect):</label>
-                    <input type="number" name="thal" value="{{ form_data.get('thal', '') }}" placeholder="Thalassemia">
-                </div>
-                <div class="form-element">
-                    <input type="submit" value="Submit">
-                </div>
-                <div class="center-text">
-                    {% if prediction == "Positive" %}
-                    <p>Heart Disease Detection Result: <span style="color: red;">{{ prediction }}</span></p>
-                    {% elif prediction == "Negative" %}
-                    <p>Heart Disease Detection Result: <span style="color: green;">{{ prediction }}</span></p>
-                    {% endif %}
-                    {% if prediction_value %}
-                    <p>Detection Probability: {{ prediction_prob }}</p>
-                    <p>Raw prediction value: {{ prediction_value }}</p>
-                    {% endif %}
-                </div>
-            </form>
-        </div>
+            </body>
+            </html>
+
+
+        <script src="{{ url_for('static', filename='app.ca52fdec51fc8527bfb5.js') }}"></script>
     </body>
-
-    </html>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="{{ url_for('static', filename='bargraph.js') }}"></script>
-    <script src="{{ url_for('static', filename='parallel-coordinates.js') }}"></script>
-    <script src="{{ url_for('static', filename='app.ca52fdec51fc8527bfb5.js') }}"></script>
-</body>
-
 </html>
