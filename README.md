@@ -11,7 +11,7 @@ Scikit-Learn (sklearn)
 Pandas
 Seaborn
 
-pip install flask numpy tensorflow matplotlib scikit-learn pandas seaborn
+pip install flask numpy tensorflow matplotlib scikit-learn pandas seaborn joblib
 ![image](https://github.com/KebinLinn/Diabetes/assets/97716641/5faba6b3-658d-4657-86e7-3341acb8136f)
 
 Make sure you have Git installed if you do not have Git already installed, follow the below link.   
@@ -27,7 +27,7 @@ https://git-scm.com/downloads
 4. Click on "File" then "Open Folder"
    ![image](https://github.com/KebinLinn/Diabetes/assets/97716641/1198daab-7c18-4400-abb0-2f2a20d00d21)
 5. Locate and open the Heart-Disease-Final-Project-Design Folder via VScode    
-6. Click on Website.py 
+6. Click on Website.py (make sure you are in the directory /Template, not templates) 
   ![image](https://github.com/KebinLinn/Heart-Disease-Final-Project-Design/assets/97716641/47fc3178-a593-4ffd-8919-e670a99d3d6d)
 7. Click "Run" then "Run without Debugging"
   ![image](https://github.com/KebinLinn/Heart-Disease-Final-Project-Design/assets/97716641/a75b0458-41a8-46c1-b77e-c469290bf4b0)
