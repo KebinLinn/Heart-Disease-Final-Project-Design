@@ -1,382 +1,437 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <link rel="stylesheet" href="{{ url_for('static', filename='app.662fec98eb52e40cc55a.css') }}">
-    </head>
-    <body class="child-frame">
-        <article class="container-fluid">
-            <section class="fluid text-center mb-3 sim-container" id="topper-container">
-                <div id="topper">
-                    <div class="herd-sim-container" data-special="1/4">
-                        <div class="herd-sim" data-vac="0" data-initial="5" data-special="1/4"></div>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.662fec98eb52e40cc55a.css') }}">
+</head>
+
+<body class="child-frame">
+    <article class="container-fluid">
+        <section class="fluid text-center mb-3 sim-container" id="topper-container">
+            <div id="topper">
+                <div class="herd-sim-container" data-special="1/4">
+                    <div class="herd-sim" data-vac="0" data-initial="5" data-special="1/4"></div>
+                </div>
+            </div>
+            <div class="topper-text header">
+                <h1 class="mt-0">Heart Disease</h1>
+                <p>A Preventable Illness</p>
+            </div>
+        </section>
+        <section class="fluid text-center header mb-3">
+            <div class="article-metadata p-0">
+                <div class="byline-container">
+                    <div class="byline">
+                        <span>By </span>
+                        <strong>
+                            <a href=".">Kevin Lin</a>
+                        </strong>
+                        <span>and</span>
+                        <strong>
+                            <a href=".">Terrence Nguyen</a>
+                        </strong>
+                        <span>and</span>
+                        <strong>
+                            <a href=".">Isabelle Woodruff-Madeira</a>
+                        </strong>
                     </div>
                 </div>
-                <div class="topper-text header">
-                    <h1 class="mt-0">Heart Disease</h1>
-                    <p>A Preventable Illness</p>
-                </div>
-            </section>
-            <section class="fluid text-center header mb-3">
-                <div class="article-metadata p-0">
-                    <div class="byline-container">
-                        <div class="byline">
-                            <span>By </span>
-                            <strong>
-                                <a href=".">Kevin Lin</a>
-                            </strong>
-                            <span>and</span>
-                            <strong>
-                                <a href=".">Terrence Nguyen</a>
-                            </strong>
-                            <span>and</span>
-                            <strong>
-                                <a href=".">Isabelle Woodruff-Madeira</a>
-                            </strong>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                    </div>
-                </aside>
-            </section>
-            <section class="body-text" id>
-                <p>In the US alone, it is estimated that half of adults currently live with hypertension, or better known as high blood pressure. Untreated hypertension can eventually lead to heart failure, which is responsible for about 379,800 deaths in 2018.</p>
-                <p>Along with hypervention, those with diabetes, hyperlipidaemia, and other cardiovascular diseases also have a high risk of heart failure. Preventive screenings and early detection are one major way to reduce the chances of heart failure, especially to those already at risk. </p>
-            </section>
-            </section>
-            <section class="body-text" id>
-                <h3>What is Heart Failure?</h3>
-                <p>Heart Failure is a lifelong condition where the heart cannot pump enough blood for the minimum need of the body. Our bodies have different methods of handling this issue, from the heart enlarging or pumping faster to meet demand. These are all temporary solutions, and if left untreated will lead to death.</p>
-                <p>Currently, there are about 6.7 million Americans over the age of 20 that have heart failure.</p>
-                <img src="https://cdn.discordapp.com/attachments/1198874338556919949/1218014448871149708/Untitled_Artwork.png?ex=66061f5a&is=65f3aa5a&hm=c4c0a29586aa8e982ef671773610155e7d702e3d6ac43e920c03c28a14402bd0&"
-                width="650" 
-                height="500"
-                />
-            </body>
-            </section>
-            <!--ADD BAR GRAPH HERE-->
-            <!--head>
+            </div>
+            </div>
+            </div>
+            </aside>
+        </section>
+        <section class="body-text" id>
+            <p>In the US alone, it is estimated that half of adults currently live with hypertension, or better known as
+                high blood pressure. Untreated hypertension can eventually lead to heart failure, which is responsible
+                for about 379,800 deaths in 2018.</p>
+            <p>Along with hypervention, those with diabetes, hyperlipidaemia, and other cardiovascular diseases also
+                have a high risk of heart failure. Preventive screenings and early detection are one major way to reduce
+                the chances of heart failure, especially to those already at risk. </p>
+        </section>
+        </section>
+        <section class="body-text" id>
+            <h3>What is Heart Failure?</h3>
+            <p>Heart Failure is a lifelong condition where the heart cannot pump enough blood for the minimum need of
+                the body. Our bodies have different methods of handling this issue, from the heart enlarging or pumping
+                faster to meet demand. These are all temporary solutions, and if left untreated will lead to death.</p>
+            <p>Currently, there are about 6.7 million Americans over the age of 20 that have heart failure.</p>
+            <img src="https://cdn.discordapp.com/attachments/1198874338556919949/1218014448871149708/Untitled_Artwork.png?ex=66061f5a&is=65f3aa5a&hm=c4c0a29586aa8e982ef671773610155e7d702e3d6ac43e920c03c28a14402bd0&"
+                width="650" height="500" />
+</body>
+</section>
+<!--ADD BAR GRAPH HERE-->
+<!--head>
                 <title>
                     Stacked Bar Graph: US Population vs. Heart Failure Cases by Age Group</title>
             </head>
             <body>
             <svg id="bargraph" width="600" height="400"></svg>
             <script src="bargraph.js"></script-->
-            <section class="body-text" id>
-                <h3>Prediction Methods</h3>
-                <p>The most straight forward way to screen for heart failure is with a physical examination. But if we were to prevent heart failure instead, it would be more complicated. The best method for screening the risks would be assessing the ejection fraction (EF) of one's heart. Ejection fraction is a measurement of how much blood the heart pumps within its left vesticle with each contraction. For scale, a normal ejection fraction would be between 50-70 percent of the total blood contained in the left vesticle is pumped out with each contraction. </p>
-                <p>An unhealthy EF would be less than 49 percent.</p>
-                <p>Below is an infographic made by the American Heart Association to inform about EF.</p>
-                <img src="https://cdn.discordapp.com/attachments/1198874338556919949/1217262532994273390/image.png?ex=66036313&is=65f0ee13&hm=76a1a72a020de5bd7ca93705bcd5e732be01c601da6ffe3fbe9ef652b675bf5f&"
-                width="650" 
-                height="500"
-                />
-            </section>
-            <section class="fluid">
-                <div class="distribution-sim-block sim-container" id="distribution-grid">
-                    <div class="restart">
-                        <p>Restart</p>
-                    </div>
-                    <div id="grouped">
-                        <div class="herd-sim-container" data-special="grouped">
-                            <div class="herd-sim" data-vac="NA" data-initial="5" data-special="grouped"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="body-text" id>
-                <p>Below is a interactive coordinate plot that displays different individuals and their health.</p>
-                <!--ADD PARALLEL PLOT HERE-->
-            </section>
-            <section class="body-text" id>
-                <p>Other methods for prevention would also be chest x-rays. This allows doctors to see if the heart is enlarged or if there is another source of issues.</p>
-                <p>A simple blood test provides health care professionals with plenty of evidence to screen for during a heart failure diagnosis. Below we share a sample of individuals that have heart failure with their ailments and bodily statistics.</p>
-                <p>There are a few methods of treating heart failure, such as surgery or medication that directly treats the cause. But living a healthy lifestyle, avoiding tobacco and maintaining a healthy diet are all ways to prevent heart failure from occuring.</p>
-            </section>
-            <section class="body-text" id>
-                <h3>Research and the Future</h3>
-                <p>Currently there are many exciting ways scientists and doctors are treating heart failure. Heart pumps, new genes and proteins, and man-made cells are all ways they are finding solutions. But the best solution you can have is preventing it from happening in the first place.</p>
-                <p>It is said that those with hypertension may need to increase their medication dosage. Relying on medication is not ideal and can get very expensive compared to maintaining a healthy lifestyle.</p>
-            </section>
-            <section class="body-text" id>
-                <h3>Good habits will lead to good results.</h3>
-                <p>The more you know about your health and body, the better you can adjust to maintain it in a healthy way.</p>
-            </section>
+<section class="body-text" id>
+    <h3>Prediction Methods</h3>
+    <p>The most straight forward way to screen for heart failure is with a physical examination. But if we were to
+        prevent heart failure instead, it would be more complicated. The best method for screening the risks would be
+        assessing the ejection fraction (EF) of one's heart. Ejection fraction is a measurement of how much blood the
+        heart pumps within its left vesticle with each contraction. For scale, a normal ejection fraction would be
+        between 50-70 percent of the total blood contained in the left vesticle is pumped out with each contraction.
+    </p>
+    <p>An unhealthy EF would be less than 49 percent.</p>
+    <p>Below is an infographic made by the American Heart Association to inform about EF.</p>
+    <img src="https://cdn.discordapp.com/attachments/1198874338556919949/1217262532994273390/image.png?ex=66036313&is=65f0ee13&hm=76a1a72a020de5bd7ca93705bcd5e732be01c601da6ffe3fbe9ef652b675bf5f&"
+        width="650" height="500" />
+</section>
+<section class="fluid">
+    <div class="distribution-sim-block sim-container" id="distribution-grid">
+        <div class="restart">
+            <p>Restart</p>
+        </div>
+        <div id="grouped">
+            <div class="herd-sim-container" data-special="grouped">
+                <div class="herd-sim" data-vac="NA" data-initial="5" data-special="grouped"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="body-text" id>
+    <p>Below is a interactive coordinate plot that displays different individuals and their health.</p>
+</section>
 
-            <section class="end-notes mt-5">
-                <section class="end-notes">
-                    <h4>Resources</h4>
-                    <p><a href="http://Heart.org">Heart.ORG</a> 
-                        <style>
-                            a:link {
-                              color: rgb(128, 0, 38);
-                              background-color: transparent;
-                              text-decoration: none;
-                            }
-                            
-                            a:visited {
-                              color: pink;
-                              background-color: transparent;
-                              text-decoration: none;
-                            }
-                            
-                            a:hover {
-                              color: rgb(211, 0, 0);
-                              background-color: transparent;
-                              text-decoration: underline;
-                            }
-                            
-                            </style>
-                        <ul><li>Easy resources to aid, prevent, and spread awareness for heart failure.</li></ul> 
-                        </p>
-                    <p><a href="https://www.nhlbi.nih.gov/research/heart-failure">NIH GOV Heart Failure</a>
-                        <style>
-                            a:link {
-                              color: rgb(128, 0, 38);
-                              background-color: transparent;
-                              text-decoration: none;
-                            }
-                            
-                            a:visited {
-                              color: pink;
-                              background-color: transparent;
-                              text-decoration: none;
-                            }
-                            
-                            a:hover {
-                              color: rgb(211, 0, 0);
-                              background-color: transparent;
-                              text-decoration: underline;
-                            }
-                            
-                            </style>   
-                    <ul><li>Current research in heart failure, prevention, and medication. </li></ul>
-                    </p>
-                <p><a href="https://www.cdc.gov/heartdisease/heart_failure.htm">CDC Heart Failure</a>
-                    <style>
-                        a:link {
-                        color: rgb(128, 0, 38);
-                        background-color: transparent;
-                        text-decoration: none;
-                        }
-                        
-                        a:visited {
-                        color: pink;
-                        background-color: transparent;
-                        text-decoration: none;
-                        }
-                        
-                        a:hover {
-                        color: rgb(211, 0, 0);
-                        background-color: transparent;
-                        text-decoration: underline;
-                        }
-                        
-                        </style>   
-                        <ul><li>Current statistics and other external links for heart failure care.</li></ul>
-                    </p>
-                    <p><a href="https://hfsa.org/patient-hub/heart-failure-facts-information#:~:text=Current%20estimates%20are%20that%20nearly,is%20also%20a%20major%20killer.">HFSA</a>
-                        <style>
-                            a:link {
-                            color: rgb(128, 0, 38);
-                            background-color: transparent;
-                            text-decoration: none;
-                            }
-                            
-                            a:visited {
-                            color: pink;
-                            background-color: transparent;
-                            text-decoration: none;
-                            }
-                            
-                            a:hover {
-                            color: rgb(211, 0, 0);
-                            background-color: transparent;
-                            text-decoration: underline;
-                            }
-                            
-                            </style>   
-                            <ul><li>Lists medications and treatments for heart failure.</li></ul>
-                        </p>
-                </section>
-            </section>
-            <section>
-                <img src="https://cdn.discordapp.com/attachments/1198874338556919949/1218010038694711396/image.png?ex=66061b3e&is=65f3a63e&hm=7c1a87267150da25cb9fa7084cc544730a844d9540e43faca6459ca0840ad0cc&"
-                width="650" 
-                height="500"
-                />
-            </section>
-        </article>
-        </script>
-
-        <html>
-            <head>
-                <style>
-                    .container {
-                        width: 50%;
-                        margin: auto;
-                        overflow: hidden;
-                    }
-                    header {
-                        background: #35424a;
-                        color: #212121;
-                        padding-top: 30px;
-                        min-height: 70px;
-                        border-bottom: #212121 3px solid;
-                    }
-                    header h1 {
-                        text-align: center;
-                        font-size: 26px;
-                        margin: 0;
-                    }
-                    form {
-                        margin: 20px;
-                        padding: 20px;
-                        background: #212121;
-                    }
-                    .form-element {
-                        margin-bottom: 15px;
-                    }
-                    .form-element label {
-                        display: inline-block;
-                        margin-right: 10px;
-                        padding-bottom: 5px;
-                    }
-                    .form-element input[type="text"],
-                    .form-element input[type="number"],
-                    .form-element input[type="submit"] {
-                        width: 100%;
-                        padding: 10px;
-                    }
-                    .form-element input[type="submit"] {
-                        background: #35424a;
-                        color: #fff;
-                        margin-top: 20px;
-                    }
-                    .form-element input[type="submit"]:hover {
-                        background: #e8491d;
-                        cursor: pointer;
-                    }
-                    .symptoms-box {
-                        border: 2px solid #35424a;
-                        padding: 20px;
-                        margin: 20px 0;
-                    }
-                    .center-text {
-                        text-align: center;
-                        font-weight: bold;
-                    }
-                </style>
-
-                <script>
-                    function validateHeightInput() {
-                        var feet = document.getElementById("height-feet").value;
-                        var inches = document.getElementById("height-inches").value;
-
-                        if (feet <= "0" && inches <= "0") {
-                            alert("Please enter a valid height greater than 0.");
-                            document.getElementById("height-feet").value = "";
-                            document.getElementById("height-inches").value = "";
-                        }
-                    }
-
-                    function validateWeightInput() {
-                        var weight = document.getElementById("weight").value;
-
-                        if (isNaN(weight) || weight <= 0) {
-                            alert("Please enter a valid positive number for weight.");
-                            document.getElementById("weight").value = "";
-                        }
-                    }
-                </script>
-            </head>
-            <body>
-                <header>
-                    <div class="container">
-                        <h1>Heart Disease Risk Detector</h1>
-                        
-                    </div>
-                </header>
-                <div class="container">
-                    <h5>Not to be used in replacement for professional medical help.</h5>
-                    
-                    <form action="{{ url_for('predict') }}" method="POST">
-                        
-                        <div class="form-element">
-                            <label for="age">Age:</label>
-                            <input type="number" name="age" value="{{ form_data.get('age', '') }}" placeholder="Age">
-                        </div>
-                        <div class="form-element" style="display: flex; align-items: center;">
-                            <label style="margin-up: 10px;">Gender:</label>
-                            <input type="radio" id="male" name="sex" value="1" {% if form_data.get('sex') == '1' %} checked {% endif %}>
-                            <label for="male">Male</label>
-                            <input type="radio" id="female" name="sex" value="0" {% if form_data.get('sex') == '0' %} checked {% endif %}>
-                            <label for="female">Female</label>
-                        </div>
-                        <div class="form-element">
-                            <label for="cp">Chest Pain Type (0-3):</label>
-                            <input type="number" name="cp" value="{{ form_data.get('cp', '') }}" placeholder="Chest Pain Type">
-                        </div>
-                        <div class="form-element">
-                            <label for="trestbps">Resting Blood Pressure:</label>
-                            <input type="number" name="trestbps" value="{{ form_data.get('trestbps', '') }}" placeholder="Resting Blood Pressure">
-                        </div>
-                        <div class="form-element">
-                            <label for="chol">Serum Cholesterol (mg/dl):</label>
-                            <input type="number" name="chol" value="{{ form_data.get('chol', '') }}" placeholder="Serum Cholesterol">
-                        </div>
-                        <div class="form-element">
-                            <label for="fbs">Fasting Blood Sugar > 120 mg/dl:</label>
-                            <input type="checkbox" name="fbs" value="1" {% if form_data.get('fbs') == '1' %} checked {% endif %}>
-                        </div>
-                        <div class="form-element">
-                            <label for="restecg">Resting Electrocardiographic Results (0-2):</label>
-                            <input type="number" name="restecg" value="{{ form_data.get('restecg', '') }}" placeholder="Resting ECG Results">
-                        </div>
-                        <div class="form-element">
-                            <label for="thalach">Maximum Heart Rate Achieved:</label>
-                            <input type="number" name="thalach" value="{{ form_data.get('thalach', '') }}" placeholder="Max Heart Rate">
-                        </div>
-                        <div class="form-element">
-                            <label for="exang">Exercise-Induced Angina:</label>
-                            <input type="checkbox" name="exang" value="1" {% if form_data.get('exang') == '1' %} checked {% endif %}>
-                        </div>
-                        <div class="form-element">
-                            <label for="oldpeak">ST Depression Induced by Exercise:</label>
-                            <input type="text" name="oldpeak" value="{{ form_data.get('oldpeak', '') }}" placeholder="ST Depression">
-                        </div>
-                        <div class="form-element">
-                            <label for="slope">Slope of the Peak Exercise ST Segment:</label>
-                            <input type="number" name="slope" value="{{ form_data.get('slope', '') }}" placeholder="Slope">
-                        </div>
-                        <div class="form-element">
-                            <label for="ca">Number of Major Vessels (0-4) Colored by Flourosopy:</label>
-                            <input type="number" name="ca" value="{{ form_data.get('ca', '') }}" placeholder="Major Vessels">
-                        </div>
-                        <div class="form-element">
-                            <label for="thal">Thalassemia (3 = normal; 6 = fixed defect; 7 = reversible defect):</label>
-                            <input type="number" name="thal" value="{{ form_data.get('thal', '') }}" placeholder="Thalassemia">
-                        </div>
-                        <div class="form-element">
-                            <input type="submit" value="Submit">
-                        </div>
-                        <div class="center-text">
-                            {% if prediction == "Positive" %}
-                                <p>Heart Disease Detection Result: <span style="color: red;">{{ prediction }}</span></p>
-                            {% elif prediction == "Negative" %}
-                                <p>Heart Disease Detection Result: <span style="color: green;">{{ prediction }}</span></p>
-                            {% endif %}
-                            {% if prediction_value %}
-                                <p>Detection Probability: {{ prediction_prob }}</p>
-                                <p>Raw prediction value: {{ prediction_value }}</p>
-                            {% endif %}
-                        </div>
-                    </form>
-                </div>
-            </body>
-            </html>
+<!--ADD PARALELL COORDINATE GRAPH HERE-->
+<div id="parallel-coordinates-plot">
+    <svg></svg>
+</div>
 
 
-        <script src="{{ url_for('static', filename='app.ca52fdec51fc8527bfb5.js') }}"></script>
-    </body>
+<!--ADD scatterplot HERE-->
+
+<div id="scatterplot-container">
+    <svg id="scatterplot"></svg>
+ </div>
+ 
+
+<section class="body-text" id>
+    <p>Other methods for prevention would also be chest x-rays. This allows doctors to see if the heart is enlarged or
+        if there is another source of issues.</p>
+    <p>A simple blood test provides health care professionals with plenty of evidence to screen for during a heart
+        failure diagnosis. Below we share a sample of individuals that have heart failure with their ailments and bodily
+        statistics.</p>
+    <p>There are a few methods of treating heart failure, such as surgery or medication that directly treats the cause.
+        But living a healthy lifestyle, avoiding tobacco and maintaining a healthy diet are all ways to prevent heart
+        failure from occuring.</p>
+</section>
+<section class="body-text" id>
+    <h3>Research and the Future</h3>
+    <p>Currently there are many exciting ways scientists and doctors are treating heart failure. Heart pumps, new genes
+        and proteins, and man-made cells are all ways they are finding solutions. But the best solution you can have is
+        preventing it from happening in the first place.</p>
+    <p>It is said that those with hypertension may need to increase their medication dosage. Relying on medication is
+        not ideal and can get very expensive compared to maintaining a healthy lifestyle.</p>
+</section>
+<section class="body-text" id>
+    <h3>Good habits will lead to good results.</h3>
+    <p>The more you know about your health and body, the better you can adjust to maintain it in a healthy way.</p>
+</section>
+
+<section class="end-notes mt-5">
+    <section class="end-notes">
+        <h4>Resources</h4>
+        <p><a href="http://Heart.org">Heart.ORG</a>
+            <style>
+                a:link {
+                    color: rgb(128, 0, 38);
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+
+                a:visited {
+                    color: pink;
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: rgb(211, 0, 0);
+                    background-color: transparent;
+                    text-decoration: underline;
+                }
+            </style>
+        <ul>
+            <li>Easy resources to aid, prevent, and spread awareness for heart failure.</li>
+        </ul>
+        </p>
+        <p><a href="https://www.nhlbi.nih.gov/research/heart-failure">NIH GOV Heart Failure</a>
+            <style>
+                a:link {
+                    color: rgb(128, 0, 38);
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+
+                a:visited {
+                    color: pink;
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: rgb(211, 0, 0);
+                    background-color: transparent;
+                    text-decoration: underline;
+                }
+            </style>
+        <ul>
+            <li>Current research in heart failure, prevention, and medication. </li>
+        </ul>
+        </p>
+        <p><a href="https://www.cdc.gov/heartdisease/heart_failure.htm">CDC Heart Failure</a>
+            <style>
+                a:link {
+                    color: rgb(128, 0, 38);
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+
+                a:visited {
+                    color: pink;
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: rgb(211, 0, 0);
+                    background-color: transparent;
+                    text-decoration: underline;
+                }
+            </style>
+        <ul>
+            <li>Current statistics and other external links for heart failure care.</li>
+        </ul>
+        </p>
+        <p><a
+                href="https://hfsa.org/patient-hub/heart-failure-facts-information#:~:text=Current%20estimates%20are%20that%20nearly,is%20also%20a%20major%20killer.">HFSA</a>
+            <style>
+                a:link {
+                    color: rgb(128, 0, 38);
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+
+                a:visited {
+                    color: pink;
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: rgb(211, 0, 0);
+                    background-color: transparent;
+                    text-decoration: underline;
+                }
+            </style>
+        <ul>
+            <li>Lists medications and treatments for heart failure.</li>
+        </ul>
+        </p>
+    </section>
+</section>
+<section>
+    <img src="https://cdn.discordapp.com/attachments/1198874338556919949/1218010038694711396/image.png?ex=66061b3e&is=65f3a63e&hm=7c1a87267150da25cb9fa7084cc544730a844d9540e43faca6459ca0840ad0cc&"
+        width="650" height="500" />
+</section>
+</article>
+</script>
+
+<html>
+
+<head>
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #35424a;
+            color: #212121;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #212121 3px solid;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 26px;
+            margin: 0;
+        }
+
+        form {
+            margin: 20px;
+            padding: 20px;
+            background: #212121;
+        }
+
+        .form-element {
+            margin-bottom: 15px;
+        }
+
+        .form-element label {
+            display: inline-block;
+            margin-right: 10px;
+            padding-bottom: 5px;
+        }
+
+        .form-element input[type="text"],
+        .form-element input[type="number"],
+        .form-element input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .form-element input[type="submit"] {
+            background: #35424a;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .form-element input[type="submit"]:hover {
+            background: #e8491d;
+            cursor: pointer;
+        }
+
+        .symptoms-box {
+            border: 2px solid #35424a;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .center-text {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function validateHeightInput() {
+            var feet = document.getElementById("height-feet").value;
+            var inches = document.getElementById("height-inches").value;
+
+            if (feet <= "0" && inches <= "0") {
+                alert("Please enter a valid height greater than 0.");
+                document.getElementById("height-feet").value = "";
+                document.getElementById("height-inches").value = "";
+            }
+        }
+
+        function validateWeightInput() {
+            var weight = document.getElementById("weight").value;
+
+            if (isNaN(weight) || weight <= 0) {
+                alert("Please enter a valid positive number for weight.");
+                document.getElementById("weight").value = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Heart Disease Risk Detector</h1>
+
+        </div>
+    </header>
+    <div class="container">
+        <h5>Not to be used in replacement for professional medical help.</h5>
+
+        <form action="{{ url_for('predict') }}" method="POST">
+
+            <div class="form-element">
+                <label for="age">Age:</label>
+                <input type="number" name="age" value="{{ form_data.get('age', '') }}" placeholder="Age">
+            </div>
+            <div class="form-element" style="display: flex; align-items: center;">
+                <label style="margin-up: 10px;">Gender:</label>
+                <input type="radio" id="male" name="sex" value="1" {% if form_data.get('sex')=='1' %} checked {% endif
+                    %}>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" value="0" {% if form_data.get('sex')=='0' %} checked {% endif
+                    %}>
+                <label for="female">Female</label>
+            </div>
+            <div class="form-element">
+                <label for="cp">Chest Pain Type (0-3):</label>
+                <input type="number" name="cp" value="{{ form_data.get('cp', '') }}" placeholder="Chest Pain Type">
+            </div>
+            <div class="form-element">
+                <label for="trestbps">Resting Blood Pressure:</label>
+                <input type="number" name="trestbps" value="{{ form_data.get('trestbps', '') }}"
+                    placeholder="Resting Blood Pressure">
+            </div>
+            <div class="form-element">
+                <label for="chol">Serum Cholesterol (mg/dl):</label>
+                <input type="number" name="chol" value="{{ form_data.get('chol', '') }}"
+                    placeholder="Serum Cholesterol">
+            </div>
+            <div class="form-element">
+                <label for="fbs">Fasting Blood Sugar > 120 mg/dl:</label>
+                <input type="checkbox" name="fbs" value="1" {% if form_data.get('fbs')=='1' %} checked {% endif %}>
+            </div>
+            <div class="form-element">
+                <label for="restecg">Resting Electrocardiographic Results (0-2):</label>
+                <input type="number" name="restecg" value="{{ form_data.get('restecg', '') }}"
+                    placeholder="Resting ECG Results">
+            </div>
+            <div class="form-element">
+                <label for="thalach">Maximum Heart Rate Achieved:</label>
+                <input type="number" name="thalach" value="{{ form_data.get('thalach', '') }}"
+                    placeholder="Max Heart Rate">
+            </div>
+            <div class="form-element">
+                <label for="exang">Exercise-Induced Angina:</label>
+                <input type="checkbox" name="exang" value="1" {% if form_data.get('exang')=='1' %} checked {% endif %}>
+            </div>
+            <div class="form-element">
+                <label for="oldpeak">ST Depression Induced by Exercise:</label>
+                <input type="text" name="oldpeak" value="{{ form_data.get('oldpeak', '') }}"
+                    placeholder="ST Depression">
+            </div>
+            <div class="form-element">
+                <label for="slope">Slope of the Peak Exercise ST Segment:</label>
+                <input type="number" name="slope" value="{{ form_data.get('slope', '') }}" placeholder="Slope">
+            </div>
+            <div class="form-element">
+                <label for="ca">Number of Major Vessels (0-4) Colored by Flourosopy:</label>
+                <input type="number" name="ca" value="{{ form_data.get('ca', '') }}" placeholder="Major Vessels">
+            </div>
+            <div class="form-element">
+                <label for="thal">Thalassemia (3 = normal; 6 = fixed defect; 7 = reversible defect):</label>
+                <input type="number" name="thal" value="{{ form_data.get('thal', '') }}" placeholder="Thalassemia">
+            </div>
+            <div class="form-element">
+                <input type="submit" value="Submit">
+            </div>
+            <div class="center-text">
+                {% if prediction == "Positive" %}
+                <p>Heart Disease Detection Result: <span style="color: red;">{{ prediction }}</span></p>
+                {% elif prediction == "Negative" %}
+                <p>Heart Disease Detection Result: <span style="color: green;">{{ prediction }}</span></p>
+                {% endif %}
+                {% if prediction_value %}
+                <p>Detection Probability: {{ prediction_prob }}</p>
+                <p>Raw prediction value: {{ prediction_value }}</p>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="{{ url_for('static', filename='scatterplot.js') }}"></script>
+<script src="{{ url_for('static', filename='parallel-coordinates.js') }}"></script>
+<script src="{{ url_for('static', filename='app.ca52fdec51fc8527bfb5.js') }}"></script>
+</body>
+
 </html>
