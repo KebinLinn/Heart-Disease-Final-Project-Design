@@ -67,7 +67,7 @@ svg.append("text")
         .attr("y", -parallelMargin.top )
         .attr("text-anchor", "middle")
         .style("font-size", "24px")
-        .text("Heart Disease Parallel Coordinate Plot");
+        .text("Heart Disease Parallel Coordinate Plot (Red = ");
 
       g1.append("g").attr("class", "foreground")
         .selectAll("path")

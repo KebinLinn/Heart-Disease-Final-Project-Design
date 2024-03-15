@@ -339,3 +339,17 @@ body.child-frame .only-embed {
        opacity: 0; /* Then fade away */
    }
 }
+
+
+#scatterplot-container {
+   width: 100%; /* Use full width of its container */
+   height: 1400px; /* Use full height of its container */
+   display: flex; /* Use flexbox layout */
+   align-items: center; /* Center vertically */
+}
+
+#scatterplot {
+   width: 100%; /* Use full width */
+   height: 100%; /* Use full height */
+   display: block; /* Ensure block display */
+}
