@@ -41,7 +41,7 @@ https://git-scm.com/downloads
 2. With Docker installed, cd to /Template and 'sudo docker build -t template .'.
 3. Run 'sudo docker run Template' after image is built.
 4. Click on working address.
-![image] (https://cdn.discordapp.com/attachments/1202073693358915584/1217997691636678738/Screenshot_2024-03-14_at_5.46.35_PM.png?ex=66060fbe&is=65f39abe&hm=6b9516c6a4018fc13ee24fa79a90ebd2f48c3c6a557014a3fe9a726bbba99970&)
+![image](https://cdn.discordapp.com/attachments/1202073693358915584/1217997691636678738/Screenshot_2024-03-14_at_5.46.35_PM.png?ex=66060fbe&is=65f39abe&hm=6b9516c6a4018fc13ee24fa79a90ebd2f48c3c6a557014a3fe9a726bbba99970&)
 
 ## Use of Liveshare
 1. Install Liveshare through VS Code extensions.
