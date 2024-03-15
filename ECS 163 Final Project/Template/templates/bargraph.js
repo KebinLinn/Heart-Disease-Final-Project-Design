@@ -14,9 +14,10 @@ const g3 = svg.append("g")
     .attr("transform", `translate(${typeMargin.left}, ${typeTop})`)
 
 
-
 const populationTotal = 300e6;
 const heartFailureTotal = 6e6;
+
+const colors = ['blue', 'red'];
 
 const populationByAge = populationDistribution.map(population => population * populationTotal);
 const heartFailureByAge = heartFailureDistribution.map(heartfail => heartfail * heartFailureTotal);
@@ -26,7 +27,6 @@ const barWidth = 50;
 const x = 50;
 const y = 350;
 
-const colors = ['blue', 'red'];
 
     for (let i = 0; i < ageGroups.length; i++) {
 
@@ -54,3 +54,4 @@ g3.append("text")
 .attr("text-anchor", "middle")
 .text("Number of Individuals")
 
+// unfinished, wont work with flask
